@@ -1,0 +1,82 @@
+.message {
+    width: 100%;
+    padding: 10px 20px 10px 25px;
+    padding: 8px 20px;
+    transition: background-color 100ms ease-in;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    outline-color: #1264a3bb;
+}
+.message:focus-within {
+    box-shadow: 0px 0px 3px 5px #1264a312;
+    border: none !important;
+}
+.message__tooltip {
+    position: absolute;
+    top: -24px;
+    right: 50px;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 150ms ease-in;
+}
+
+.message:hover .message__tooltip {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.message:hover {
+    background-color: #efefef;
+}
+
+.message__avatarDiv {
+    margin-right: 12px;
+}
+
+.message__avatar {
+    border-radius: 4px !important;
+}
+
+.message__body {
+    color: var(--text-secondary);
+}
+
+.message__body p {
+    line-height: 1.3;
+}
+
+.message__header {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.message__header span {
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #888;
+}
+
+.message__icons {
+    margin-top: 10px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message__iconButton {
+    padding: 3px 8px !important;
+    border-radius: 20px !important;
+    background-color: #efefef99 !important;
+    border: 1px solid transparent !important;
+    transition: background-color 200ms ease-in, border 200ms ease-in;
+}
+
+.message__iconButton:hover {
+    border-color: #999 !important;
+    background-color: #fff !important;
+}

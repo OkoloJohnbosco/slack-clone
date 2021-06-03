@@ -1,0 +1,80 @@
+.sidebar {
+    background-color: #4a124b;
+    min-width: 270px;
+    height: calc(100vh - 52px) !important;
+    overflow-y: scroll;
+}
+
+/* Hide Scroll bar */
+/* .sidebar::-webkit-scrollbar {
+    display: none;
+} */
+
+/* Hide scrollbar for IE, Edge and Firefox */
+/* .sidebar {
+    -ms-overflow-style: none; */
+/* IE and Edge */
+/* scrollbar-width: none; */
+/* Firefox */
+/* } */
+
+/* The end */
+
+.sidebar::-webkit-scrollbar {
+    margin-right: 4px;
+    width: 8px;
+    cursor: pointer;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    background-color: #79237a;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #cccccc;
+    margin-right: 4px;
+    border-radius: 10px;
+}
+
+.sidebar__headerLeft {
+    color: var(--text-gray);
+}
+
+.sidebar__header {
+    position: sticky;
+    top: 0;
+    background-color: #4a124b;
+    padding: 14px 15px;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    border-bottom: 1px solid var(--gray--border);
+}
+
+.sidebar__headerInner {
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.sidebar__headerIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sidebar__headerUser {
+    margin-top: 10px;
+    color: var(--text-gray);
+}

@@ -1,0 +1,35 @@
+.sidebarOptions {
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 2px;
+    width: 100%;
+    margin: 5px 0;
+    transition: background-color 200ms ease, opacity 200ms ease;
+    padding: 3px 10px 3px 20px;
+}
+
+.sidebarOptions h3 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.sidebarOptions:hover {
+    opacity: 0.9;
+    background-color: #340e36;
+}
+
+.sidebarOptions__icon {
+    font-size: 15px !important;
+    color: var(--text-gray) !important;
+    padding: 10px !important;
+    box-sizing: content-box;
+}
+
+.sidebarOption__channel {
+    padding: 10px 0;
+}
+
+.sidebarOption__hash {
+    margin: 0 10px;
+}
